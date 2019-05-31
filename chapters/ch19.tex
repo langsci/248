@@ -85,19 +85,20 @@ Quite ordinary utterances can also give rise to higher-order meanings. In the ex
 %
 %A subset $F$ of $\cal I$ is called an \emph{up-set} if, whenever $\sigma \in F$, $\tau \in {\cal I}$ and $\sigma \Rightarrow_\ell \tau$, we have $\tau \in F$. With this in mind, a filter on $\cal I$ can be more compactly described as a nonempty up-set closed under meet. The set of filters on $\cal I$ is ordered by inclusion.
 %
-%As I've said, situations are collections of infons. The relation between a situation $s$ and an infon $\sigma$ that holds in it is written $s \models \sigma$  or $\sigma \in s$, and is described by saying $s$ supports $\sigma$ or $\sigma$ holds in $s$. As mentioned earlier, the information expressed by the relation $\models$ is special and $s \models \sigma$ is called a proposition. Only propositions can be true or false or indeterminate, the last in borderline cases involving vague terms or when the relevant infon is partial; infons by themselves do not admit of truth values. Utterances typically convey multiple propositions, although these are usually multiple infons relative to a common described situation.
+%As I've said, situations are collections of infons. The relation between a situation $s$ and an infon $\sigma$ that holds in it is written $s \vDash \sigma$  or $\sigma \in s$, and is described by saying $s$ supports $\sigma$ or $\sigma$ holds in $s$. As mentioned earlier, the information expressed by the relation $\vDash$ is special and $s \vDash \sigma$ is called a proposition. Only propositions can be true or false or indeterminate, the last in borderline cases involving vague terms or when the relevant infon is partial; infons by themselves do not admit of truth values. Utterances typically convey multiple propositions, although these are usually multiple infons relative to a common described situation.
 %
 %For all situations $s$ and all infons $\sigma$ and $\tau$, the following facts hold:
 %
 %\begin{enumerate}
 %
-%\item $s \not\models \mathbf{0}$ and $s \models \mathbf{1}$.
+%\item $s 
+%vDash \mathbf{0}$ and $s \vDash \mathbf{1}$.
 %
-%\item If $s \models \sigma$ and $\sigma \Rightarrow_\ell \tau$ then $s \models \tau$.
+%\item If $s \vDash \sigma$ and $\sigma \Rightarrow_\ell \tau$ then $s \vDash \tau$.
 %
-%\item $s \models \sigma \wedge \tau$ if and only if $s \models \sigma$ and $s \models \tau$. 
+%\item $s \vDash \sigma \wedge \tau$ if and only if $s \vDash \sigma$ and $s \vDash \tau$. 
 %
-%\item $s \models \sigma \vee \tau$ if and only if $s \models \sigma$ or $s \models \tau$.
+%\item $s \vDash \sigma \vee \tau$ if and only if $s \vDash \sigma$ or $s \vDash \tau$.
 %
 %\end{enumerate}
 %
@@ -125,7 +126,7 @@ Based on this, we can say how this more capacious content should be characterize
 
 We can tentatively define $(\sigma,\pi) \wedge (\sigma',\pi')$ to be $(\sigma \wedge \sigma', \min(\pi,\pi'))$ and stipulate that if $\sigma \Rightarrow_{\ell} \sigma'$ and $\pi' \leq \pi$ then it follows that $(\sigma, \pi) \Rightarrow_{\ell} (\sigma', \pi')$. To simplify things, we could just set $\pi' = \pi$ for the latter. With this understanding, the definition of logical significance is complete.
 
-Recall that if $s \models \sigma$ and $\sigma \Rightarrow_\ell \tau$ then $s \models \tau$ and also that $s \models \sigma \wedge \tau$ if and only if $s \models \sigma$ and $s \models \tau$. These facts tell us that propositions can naturally be broadened to include significances as well.
+Recall that if $s \vDash \sigma$ and $\sigma \Rightarrow_\ell \tau$ then $s \vDash \tau$ and also that $s \vDash \sigma \wedge \tau$ if and only if $s \vDash \sigma$ and $s \vDash \tau$. These facts tell us that propositions can naturally be broadened to include significances as well.
 
 Intuitively, it makes sense to include all the consequences of the direct and indirect meanings even though agents may not explicitly realize many of them. In an ongoing conversation, such significances can often be taken for granted as part of the understanding among interlocutors. Significance should therefore also be treated as part of what I have called the \emph{referential} meaning of an utterance in addition to direct and indirect contents. If one refers to a murderer, one has also referred to a person and this property is therefore also part of the meaning even if an agent doesn't quite work it out. All the referential meanings dealt with so far can be thought of as \emph{conveyed} by the speaker to the addressee and some subset of this may even be \emph{communicated} in Grice's special sense. In addition, the intentions attaching to such meanings may be either explicit or implicit because it may not be possible for a speaker to foresee all the logical consequences of his utterance. It can happen that a person makes a claim without grasping one or more of its consequences; if some untenable consequence is pointed out to him, he may want to withdraw his claim and this lends some weight to the intuition that such significance be included in the referential meaning of an utterance.
 
@@ -176,7 +177,7 @@ And Martha is thinking: But, hey, I'm not so sure I want this kind of relationsh
 
 And Fred is thinking: \ldots\ so that means it was \ldots\ let's see \ldots\ February when we started going out, which was right after I had the car at the dealer's, which means \ldots\ lemme check the odometer \ldots\ Whoa! I am way overdue for an oil change here.
 
-And Martha is thinking: He's upset. I can see it on his face. Maybe I'm reading this completely wrong. Maybe he wants more from our relationship, more intimacy, more commitment; maybe he has sensed---even before I sensed it---that I was feeling some reservations. Yes, I bet that's it. That's why he's so reluctant to say anything about his own feelings. He's afraid of being rejected.
+And Martha is thinking: He's upset. I can see it on his face. Maybe I'm reading this completely wrong. Maybe he wants more from our relationship, more intimacy, more commitment; maybe he has sensed -- even before I sensed it -- that I was feeling some reservations. Yes, I bet that's it. That's why he's so reluctant to say anything about his own feelings. He's afraid of being rejected.
 
 And Fred is thinking: And I'm gonna have them look at the transmission again. I don't care what those morons say, it's still not shifting right. And they better not try to blame it on the cold weather this time. What cold weather? It's 87 degrees out, and this thing is shifting like a garbage truck, and I paid those incompetent thieves \$600.
 
@@ -234,7 +235,7 @@ And that's the difference between men and women.
 
 \end{quote}
 
-It is instructive to try and tease apart the different kinds of meanings in this piece---from locutionary to illocutionary, from logical significance to a wider significance, and from associations to extended meanings. It also shows how there is almost never an identity of speaker and addressee meaning at a broader level.
+It is instructive to try and tease apart the different kinds of meanings in this piece -- from locutionary to illocutionary, from logical significance to a wider significance, and from associations to extended meanings. It also shows how there is almost never an identity of speaker and addressee meaning at a broader level.
 
 Associations and extended meanings are generally not part of what is intended by an utterance even if they may be intended to be evoked abstractly by an author, especially in fiction. But they are nevertheless part of the content of the \emph{utterance} and this is part of why I started this chapter by saying that even a single utterance is an extraordinarily complex event. So far, I have been trying to show that the meanings of an utterance can cover a potentially wide and even infinite territory. But this should not mislead one into thinking that this kind of meaning is \emph{always} vast. It can occasionally be fairly simple and quite small.
 
@@ -260,7 +261,7 @@ Latent meanings are often derived in the context of a set of extraneous beliefs 
 
 I have been alluding indirectly to discourse meaning when I have talked about the meanings of texts but here is a specific example that goes beyond the meaning of a single utterance. In \emph{Getting Even}, Woody Allen\index{Allen, Woody} says, ``Can we actually `know' the universe? My God, it's hard enough finding your way around in Chinatown.'' The humor in this works partly because of the contrast between the scale of the universe and the scale of Chinatown and partly because of the bathetic fall from the loftiness of epistemological inquiry to merely getting around. But this contrast and bathos are not directly present in either sentence taken by itself. It is their \emph{juxtaposition} as part of a single discourse that gives rise to such discourse meanings. 
 
-It is possible to develop a rigorous model of discourse meaning based on Equilibrium Linguistics by creating a sequence of Communication Games and linking them appropriately. The challenge would be to understand the kinds of relations (e.g.\ contrast, bathos, etc.) that can occur among the meanings of single utterances in the discourse. These relations would form part of the discourse meaning---so-called \emph{inter-utterance meaning}---that transcends single-utterance meaning. 
+It is possible to develop a rigorous model of discourse meaning based on Equilibrium Linguistics by creating a sequence of Communication Games and linking them appropriately. The challenge would be to understand the kinds of relations (e.g.\ contrast, bathos, etc.) that can occur among the meanings of single utterances in the discourse. These relations would form part of the discourse meaning -- so-called \emph{inter-utterance meaning} -- that transcends single-utterance meaning. 
 
 In addition, just as the content of a word depends on the contents of other words in an utterance, so the content of an utterance depends on the contents of other utterances in a discourse. Perhaps the most commonly investigated area of discourse meaning is anaphoric reference,\footnote{See \citet{cp:ga} and the references therein.} and there are many subtleties even in this seemingly simple problem.
 

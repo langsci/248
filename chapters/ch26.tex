@@ -1,10 +1,10 @@
 \chapter{Communication, Frege's Puzzle, and Reference} \label{ch:centrality of communication}
 
-We have now traversed the whole path of Equilibrium Semantics. Looking back, it is possible to see many different dimensions of the problem of meaning---philosophical, linguistic, psychological, computational, and even humanistic, encompassing many aspects of the human sciences as discussed especially in Chapters~\ref{ch:beyond illocutionary meaning} and \ref{ch:beyond language}. Throughout, I have tried to demonstrate that the idea of equilibrium pervades all of semiosis.
+We have now traversed the whole path of Equilibrium Semantics. Looking back, it is possible to see many different dimensions of the problem of meaning -- philosophical, linguistic, psychological, computational, and even humanistic, encompassing many aspects of the human sciences as discussed especially in Chapters~\ref{ch:beyond illocutionary meaning} and \ref{ch:beyond language}. Throughout, I have tried to demonstrate that the idea of equilibrium pervades all of semiosis.
 
 %I hope it fulfills the promise made at the start to connect Equilibrium Semantics to a variety of disciplines, not only philosophy, the various subfields of linguistics, psychology, and artificial intelligence, but also the cognitive and social sciences, including especially economics.
 
-Over the course of its modern history, many have felt the intuitive appeal of a use-based or communication-based foundation for semantics but the content of this Wittgensteinian\index{Wittgenstein, Ludwig} insight has always been obscure, even mysterious. What can one possibly do with \emph{use}? It seems like such a structureless, anti-theoretical idea. Indeed, even connecting use with communication appears ineffectual because the latter looks like it has little to offer beyond Austinian\index{Austin, J. L.} and Gricean\index{Grice, Paul} informalities. And so the relative---but viciously circular and question-begging\footnote{See the quote by Dummett\index{Dummett, Michael|nn} in \sectref{sec:classic example}.}---safety of a Fregean\index{Frege, Gottlob} and logicist\is{logicism} truth-based\is{truth} foundation has continued to beckon.
+Over the course of its modern history, many have felt the intuitive appeal of a use-based or communication-based foundation for semantics but the content of this Wittgensteinian\index{Wittgenstein, Ludwig} insight has always been obscure, even mysterious. What can one possibly do with \emph{use}? It seems like such a structureless, anti-theoretical idea. Indeed, even connecting use with communication appears ineffectual because the latter looks like it has little to offer beyond Austinian\index{Austin, J. L.} and Gricean\index{Grice, Paul} informalities. And so the relative -- but viciously circular and question-begging\footnote{See the quote by Dummett\index{Dummett, Michael|nn} in \sectref{sec:classic example}.} -- safety of a Fregean\index{Frege, Gottlob} and logicist\is{logicism} truth-based\is{truth} foundation has continued to beckon.
 
 In my view, neither use-based unsystematicity nor truth-based systematicity offer a scientific approach to semantics. The only remaining possibility is to follow Grice, whose singular attempt to understand communication in the small and in the large was systematic but informal. I have tried to present a very thorough critique of practically his entire oeuvre together with that of his many followers whether they are orthodox Griceans, neo-Griceans, or post-Griceans.
 
@@ -19,7 +19,7 @@ As I mentioned in \chapref{ch:why communication is central}, there are at least 
 
 %in addition to the detailed understanding of communication itself. 
 
-The first is that because it tackles the main question of semantics---how language acquires meaning---directly, the framework's many results impose a top-down \emph{constraint} on possible answers to its various subquestions involving particular linguistic constructions. Indeed, the subtasks of semantics devolve into building alternative theories \emph{within} the framework for the same phenomena that can be straightforwardly compared because they share a common foundation. In the same way, theories within the framework for different phenomena can be synthesized and integrated owing to a common foundation. I tried to demonstrate this latter kind of integration in \citet[Chapter~6]{parikh:le} where I developed accounts of descriptions, names, and generalized quantifiers that all shared the same basic assumptions about how noun phrases work.
+The first is that because it tackles the main question of semantics -- how language acquires meaning -- directly, the framework's many results impose a top-down \emph{constraint} on possible answers to its various subquestions involving particular linguistic constructions. Indeed, the subtasks of semantics devolve into building alternative theories \emph{within} the framework for the same phenomena that can be straightforwardly compared because they share a common foundation. In the same way, theories within the framework for different phenomena can be synthesized and integrated owing to a common foundation. I tried to demonstrate this latter kind of integration in \citet[Chapter~6]{parikh:le} where I developed accounts of descriptions, names, and generalized quantifiers that all shared the same basic assumptions about how noun phrases work.
 
 The only other possibility is to be bottom-up and piecemeal and hope that the proliferation of foundational assumptions will somehow get reconciled. It should be obvious that this is a hopeless task. In fact, many theorists end up relying on foundational Gricean assumptions, not pausing sufficiently to ask whether relegating certain things to ``pragmatics'' and to the Gricean maxims is a sound move.\footnote{Even \citet{kripke:srsr} is guilty of this.} If my critique of Grice is correct then this recourse is no longer available.
 
@@ -81,7 +81,7 @@ I now solve Frege's puzzle in a way that survives challenges posed by more compl
 
 \subsubsection{Resource Situations and Modes of Presentation}
 
-The idea of resource situations comes from \citet{bp:sa}.\index{Barwise, Jon} At least one resource situation $r_u$ is associated with every noun phrase via $u$. Every resource situation associated with a name $N$ contains an infon like $\soa{R^c;\ a;\ N;\ u}$ \emph{by definition}. That is, $r_u(N)$ is a resource situation induced by $u$ only if $r_u(N) \models \soa{R^c;\ a;\ N;\ u}$ for some $R^c$, $a$ relative to $N$ and $u$. Not all resource situations involve such causal chains; some may be perceptual or may depend on an attribute.
+The idea of resource situations comes from \citet{bp:sa}.\index{Barwise, Jon} At least one resource situation $r_u$ is associated with every noun phrase via $u$. Every resource situation associated with a name $N$ contains an infon like $\soa{R^c;\ a;\ N;\ u}$ \emph{by definition}. That is, $r_u(N)$ is a resource situation induced by $u$ only if $r_u(N) \vDash \soa{R^c;\ a;\ N;\ u}$ for some $R^c$, $a$ relative to $N$ and $u$. Not all resource situations involve such causal chains; some may be perceptual or may depend on an attribute.
 
 %It is convenient to drop the $N$ from $r_u(N)$ and retain just $r_u$ as the name is understood from the context.
 
@@ -96,7 +96,7 @@ In \sectref{sec:information} I had defined the following function:
 \begin{equation}
 e(P,s) = \left\{ \begin{array}{ll}
 a & \mbox{if there is exactly one object $a$ having $P$ in $s$} \\
-\{x \mid s \models \soa{P;\ x}\} & \mbox{otherwise}
+\{x \mid s \vDash \soa{P;\ x}\} & \mbox{otherwise}
 \label{eq:eps}			\end{array}
 		\right.
 \end{equation}
@@ -106,8 +106,8 @@ In the context of causal chains and resource situations for names, I substitute 
 \begin{equation}
 e(P^{\hbox{\emph{N}}},r_u) = \left\{ \begin{array}{ll}
 a & \mbox{if there is exactly one object $a$ having $P^{\hbox{\emph{N}}}$ in $r_u$} \\ 
-%& \mbox{and $r_u \models \soa{R^c;\ a;\ N\ u}$} \\
-\{x \mid r_u \models \soa{P^{\hbox{\emph{N}}};\ x}\} & \mbox{otherwise}
+%& \mbox{and $r_u \vDash \soa{R^c;\ a;\ N\ u}$} \\
+\{x \mid r_u \vDash \soa{P^{\hbox{\emph{N}}};\ x}\} & \mbox{otherwise}
 \label{eq:eps}			\end{array}
 		\right.
 \end{equation}
@@ -211,7 +211,7 @@ Direct reference theorists and others who treat the contents of identity stateme
 Perhaps our most important means of acquiring information is through linguistic communication; not only that, much of the information we have could not be had without language.  But the closer scrutiny initiated by Kripke himself should caution us against taking one of the relatively simple uses of language as evidence for rather counterintuitive claims about what are essentially metaphysical and epistemological concepts.
 
 Possibly, mathematical identities such as $7 + 5 = 12$ can also be seen in this dual intensional-extensional way and then their being informative would follow. Of course, they still remain necessary truths unlike ``Hesperus is Phosphorus'' and the question of how necessary
-truths can be informative---like learning that a large number is a prime---is a different one.  
+truths can be informative -- like learning that a large number is a prime -- is a different one.  
 
 %But the first step to answering it is to make clear that the content of mathematical utterances is at least not trivial. 
 
@@ -246,7 +246,7 @@ There are two natural notions of reference, ``subjective reference'' correspondi
 
 \begin{definition}
 
-$\cal A$ subjectively refers to $\sigma$ by uttering $\alpha$ in $u$ if and only if there is a situation $c$ such that $\cal A$ means $p = (c \models \sigma)$ by uttering $\alpha$ in $u$.
+$\cal A$ subjectively refers to $\sigma$ by uttering $\alpha$ in $u$ if and only if there is a situation $c$ such that $\cal A$ means $p = (c \vDash \sigma)$ by uttering $\alpha$ in $u$.
 
 \label{def:subjectively refers}
 \end{definition}
@@ -254,12 +254,12 @@ $\cal A$ subjectively refers to $\sigma$ by uttering $\alpha$ in $u$ if and only
 
 \begin{definition}
 
-$\cal A$ refers to $\sigma$ by uttering $\alpha$ in $u$ if and only if there is a situation $c$ and an addressee $\cal B$ such that $\cal A$ communicates $p = (c \models \sigma)$ to $\cal B$ by uttering $\alpha$ in $u$.
+$\cal A$ refers to $\sigma$ by uttering $\alpha$ in $u$ if and only if there is a situation $c$ and an addressee $\cal B$ such that $\cal A$ communicates $p = (c \vDash \sigma)$ to $\cal B$ by uttering $\alpha$ in $u$.
 
 \label{def:refers}
 \end{definition}
 
-\noindent Here, $p = (c \models \sigma)$ is a partial or full proposition based on the partial or full infon $\sigma$. When $\sigma = \soa{a} = a$ where $a$ is an individual, we get the familiar case of singular reference. 
+\noindent Here, $p = (c \vDash \sigma)$ is a partial or full proposition based on the partial or full infon $\sigma$. When $\sigma = \soa{a} = a$ where $a$ is an individual, we get the familiar case of singular reference. 
 
 %As should be evident, reference is essentially speaker meaning or communication depending on one's interest. 
 
