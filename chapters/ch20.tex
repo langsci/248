@@ -3,8 +3,12 @@
 I have now laid out more or less the entire field of meaning. Picturing this takes a few diagrams. The first basic division is of utterance meaning into intended meaning and extracted but unintended meaning. Intentions may be explicit or implicit. This is shown in Figure~\ref{fig:utterance meaning}.
 
 
-\begin{figure}[htbp] 
-\Tree [.{utterance meaning} [.{intended meaning} ] [.{extracted but unintended meaning} ] ]
+\begin{figure}[h]\small
+\begin{forest} for tree={align=center,base=top}
+[utterance meaning
+    [intended meaning] [extracted but unintended meaning]
+]
+\end{forest}
 \caption{Classification of utterance meaning}
 \label{fig:utterance meaning}
 \end{figure}
@@ -12,8 +16,18 @@ I have now laid out more or less the entire field of meaning. Picturing this tak
 
 I could have added a third branch showing syntactic and phonetic contents. Dividing the left branch further, we get the tree in Figure~\ref{fig:intended meaning}.
 
-\begin{figure}[htbp] 
-\Tree [.{intended meaning} [.{communicated meaning} [.{locutionary meaning} [.{lexical/structural disambiguation} ] [.{saturation} ] !\qsetw{0.6 in} [.{modulation} ] ] !\qsetw{3 in} [.{illocutionary meaning}  [.{free enrichment} ] [.{implicature} ]  [.{force} ] ] ] !\qsetw{2 in} [.{intended weaker flows\\ (e.g.\ suggestion)} ] ] 
+\begin{figure}[h]\small
+\begin{forest} for tree={align=center,base=top}
+[intended meaning
+    [communicated\\meaning
+        [locutionary\\meaning
+                [lexical\slash structural\\disambiguation] [saturation] [modulation]
+        ] [illocutionary\\meaning
+                [free\\enrichment] [implicature] [force]
+        ]
+    ] [intended weaker flows\\(e.g.\ suggestion)]
+]
+\end{forest}
 \caption{Classification of intended meaning}
 \label{fig:intended meaning}
 \end{figure} 
@@ -26,8 +40,18 @@ The category of intended weaker flows represents transfers of information that d
 I have touched upon Grice's distinction between literal meaning (or \emph{what is said}) and implicature now and then and this is just a different way to carve up direct and indirect contents. Literal meaning includes locutionary meaning and  enrichments. The direct/indirect distinction has more to do with \emph{how} these contents are derived and Grice's distinction has more to do with \emph{what} contents we lump together psychologically. There has been a great deal of discussion about the latter division, especially by \citet{recanati:lm},\index{Recanati, Fran\c{c}ois} and he tries to argue that literal meanings are in some sense \emph{available} to our conscious perception in a way that locutionary or direct meanings are not because the latter have to be teased apart from modulations and enrichments after the fact. So an alternative way to classify intended meaning is shown in Figure~\ref{fig:intended meaning 2}.
 
 
-\begin{figure}[htbp] 
-\Tree [.{intended meaning} [.{communicated meaning} [.{literal meaning} [.{lexical/structural disambiguation} ] [.{saturation} ] [.{modulation} ] [.{free enrichment} ] ] !\qsetw{1.5 in} [.{implicature} ] [.{force} ] ] !\qsetw{1.5 in} [.{intended weaker flows\\ (e.g.\ suggestion)} ] ]
+\begin{figure}[h]\small
+\begin{forest} for tree={align=center,base=top}
+[intended\\meaning
+    [communicated\\meaning
+        [literal\\meaning
+            [lexical/structural\\disambiguation] [saturation] [modulation] [free\\enrichment] 
+        ]
+        [implicature] [force]
+    ]
+    [intended weaker flows\\(e.g.\ suggestion)]
+]
+\end{forest}
 \caption{Alternative classification of intended meaning}
 \label{fig:intended meaning 2}
 \end{figure} 
@@ -38,8 +62,12 @@ I have emphasized throughout that many of these categories are not separated by 
 The category of extracted but unintended meaning can be divided as shown in Figure~\ref{fig:extracted meaning}.
 
 
-\begin{figure}[htbp] 
-\Tree [.{extracted but unintended meaning} [.{significance} ] [.{association and extended meaning} ] [.{inverse information} ]  [.{latent meaning} ] ]
+\begin{figure}[h]\small
+\begin{forest} for tree={align=center,base=top}
+[extracted but unintended meaning
+    [significance] [association and\\extended meaning] [inverse information] [latent meaning]
+]
+\end{forest}
 \caption{Classification of extracted but unintended meaning}
 \label{fig:extracted meaning}
 \end{figure}
@@ -47,8 +75,10 @@ The category of extracted but unintended meaning can be divided as shown in Figu
 
 Recall that some parts of significance, especially logical significance, are intended so again these classes are not watertight. The same is true of associations, extended meanings, and inverse information. Latent meanings, by definition, cannot be intended. I have tried to show in the previous chapter how the two basic aspects of utterance meaning, intended and unintended meaning, fit together into a natural whole. If we wish, we can draw a final diagram for discourse meaning shown in Figure~\ref{fig:discourse meaning}. The category of inter-utterance meanings that transcend individual utterance meanings was discussed in the previous chapter.
 
-\begin{figure}[htbp] 
-\Tree [.{discourse meaning} [.{utterance meanings} ] [.{inter-utterance meanings} ] ]
+\begin{figure}[h]\small
+\begin{forest} for tree={align=center,base=top}
+[discourse meaning [utterance meanings] [inter-utterance meanings]]
+\end{forest}
 \caption{Classification of discourse meaning}
 \label{fig:discourse meaning}
 \end{figure}
@@ -72,11 +102,3 @@ $\varphi$ in $u$, and the games $G^{\cal A}_u(\varphi)$, $G^{\cal B}_u(\varphi)$
 I have now developed the full details of the global games in the definition as well as of the larger picture of micro-semantics sketched in \chapref{ch:picture of communication}. This should make it possible to see how the definition naturalizes meaning \emph{modulo} the category of conventional meaning which has so far been taken as externally given. In Part~\textrm{V} on macro-semantics, I provide an internal account of conventional meaning after which the naturalization of meaning will be fully realized assuming the framework I have described is correct.
 
 Before I turn to that task, we take a brief detour to see what Equilibrium Linguistics has to offer the problem of translation.
-
-
-
-
-
-
-
-
