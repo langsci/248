@@ -12,7 +12,7 @@
         colorlinks,
         citecolor=brown, 
 %         draft,
-        draftmode,
+%         draftmode,
         leqno,
 %  showindex,
 %  nobabel,
@@ -29,7 +29,6 @@
 \input{localhyphenation.tex}
 \input{localcommands.tex} 
 \addbibresource{localbibliography.bib}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Frontmatter                      %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
@@ -50,22 +49,22 @@
 %%%             Chapters                         %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\part{Introduction}
+\part{Introduction}\label{part:I}
 \include{chapters/ch1} %add a percentage sign in front of the line to exclude this chapter from book
 \include{chapters/ch2}
 \include{chapters/ch3}
 \include{chapters/ch4}
-\part{Foundational perspectives}
+\part{Foundational perspectives}\label{part:II}
 \include{chapters/ch5}
 \include{chapters/ch6}
-\part{Communication games}
+\part{Communication games}\label{part:III}
 \include{chapters/ch7}
 \include{chapters/ch8}
 \include{chapters/ch9}
 \include{chapters/ch10}
 \include{chapters/ch11}
 \include{chapters/ch12}
-\part{Illocutionary meaning and beyond}
+\part{Illocutionary meaning and beyond}\label{part:IV}
 \include{chapters/ch13}
 \include{chapters/ch14}
 \include{chapters/ch15}
@@ -75,12 +74,12 @@
 \include{chapters/ch19}
 \include{chapters/ch20}
 \include{chapters/ch21}
-\part{Language games}
+\part{Language games}\label{part:V}
 \include{chapters/ch22}
 \include{chapters/ch23}
 \include{chapters/ch24}
 \include{chapters/ch25}
-\part{Conclusion}
+\part{Conclusion}\label{part:VI}
 \include{chapters/ch26}
 
 \appendix

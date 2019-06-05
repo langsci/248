@@ -1,7 +1,6 @@
-\chapter{Psycholinguistics and Natural Language Processing} \label{ch:psycholinguistics and cl}
+\chapter{Psycholinguistics and natural language processing} \label{ch:psycholinguistics and cl}
 
-
-\section{The Connection with Psycholinguistics} \label{sec:psycholinguistics}
+\section{The connection with psycholinguistics} \label{sec:psycholinguistics}
 
 The foregoing analysis presents the broad framework for (locutionary) communication. Psycholinguists study the actual processes of utterance production and comprehension. So the Communication Game $\Gamma_u$ has to be specialized and refined in various ways to fit with their experimental data. Fortunately, the basic approach of Equilibrium Semantics is largely compatible with the findings reported in, for example, the textbook by \citet[Chapters~5--8]{fsc:fp} and elsewhere. 
 
@@ -34,7 +33,7 @@ At a more general level, it is far from clear from the data whether the various 
 Such observations and others suggest the possibility that an entire suite of psycholinguistic and neurolinguistic experiments may be conducted in light of Equilibrium Linguistics and there is much scope for fruitful interactions between the two. This could lead to one kind of unification of the separate fields -- psycholinguistics and semantics -- of the science of language mentioned in \sectref{sec:equilibrium semantics} and at the end of \chapref{ch:romantic tradition}. Current work in semantics is so remote from psycholinguistic practices that there is no easy way to bring them together. It is to the credit of Equilibrium Linguistics that its results are both more general and more precise than what exists in semantics and are therefore more directly testable.
 
 
-\section{The Connection with Natural Language Processing} \label{sec:cl}
+\section{The connection with natural language processing} \label{sec:cl}
 
 Not only does my framework connect with psycholinguistics and neurolinguistics, it also offers multiple bridges to computational linguistics and natural language processing. Artificial intelligence involves different kinds of constraints as compared with real-time human processing and is generally divided into logical,  statistical, and hybrid approaches, although most contemporary methods involve some use of probabilities.
 
@@ -54,11 +53,9 @@ Those pursuing purely logical approaches do not seem to realize that their setup
 
 Incidentally, these observations are orthogonal to the issue of how so-called real world knowledge is best represented as I also said in \sectref{sec:solving locutionary global games}. Both pure abduction and more refined strategic inference require it as any full-fledged approach would. Some of it may be present in the encyclopedic entries for lexical items and some of it in some kind of knowledge base. It would enter the computation of meaning both through conventional (lexical) meanings and through the prior probabilities in the locutionary global game. But, importantly, the need for explicit representation of some of it would be circumvented by using corpus-based probabilities for different alternatives. But it cannot be avoided altogether. Consider the following example:
 
-\begin{description}
-
-\item The weight went through the wall because it was made of iron.
-
-\end{description}
+\ea
+\itshape The weight went through the wall because it was made of iron.
+\z
 
 \noindent Here, some world knowledge has to be used to set the conditional probabilities for the two possible referents of the pronoun. The probability for \emph{weight} would presumably be higher than for \emph{wall}. We also used such world knowledge in the earlier examples, including the simple sentence \textit{Bill ran} (e.g.\ knowing that politicians run in elections). Humans have ready access to it so it can be assumed to be available. For the sentence above, it is enough to say that most human interlocutors would have the background knowledge that iron would go through many ordinary materials and so the possible referent \emph{weight} has a higher probability. This is really all that is required for a semantic theory for humans in my opinion. It is not a gap in the theory to say we cannot assign higher or lower probabilities without such background assumptions. Artificial agents, on the other hand, do not have such knowledge so it has to be made explicit. This is best done in the context of actually building such agents. In any case, such orthogonal matters cannot be addressed here but suffice it to say that Equilibrium Linguistics offers a hybrid approach to the problem.
 
@@ -82,7 +79,7 @@ While Hidden Markov Models are also not sufficiently general as they rely essent
 
 To illustrate how bringing in rationality can generalize such purely probabilistic considerations, consider the problem of classifying a piece of text as spam or not spam.\is{text classification}\is{text classification!spam} This example also shows, incidentally, how the tools of Equilibrium Linguistics can be extended to related tasks such as text classification as mentioned earlier in \sectref{sec:generation game}. A rudimentary version of the spam identification task can be modeled by the simple game shown in Figure~\ref{fig:text classification game}. Being spam or not spam is just a more abstract kind of content of an utterance.
 
-\begin{figure}[htbp] 
+\begin{figure}[h] 
 \input{figures/pix4textclassification.tex}
 \caption{Text classification game $g_{tc}$}
 \label{fig:text classification game}
@@ -96,6 +93,6 @@ As one would expect, the illumination goes in the other direction from statistic
 
 This shows that if the approaches of Equilibrium Linguistics and statistical NLP are combined then both can be enriched, the former by adding more features to the list of conditioning variables, and the latter by bringing in both rationality as well as a more satisfying and foundational basis for the results.\is{statistical NLP|)}
 
-I believe Part~\textrm{III} gives a more or less complete solution to the problem of locutionary communication that is, as advertised in \sectref{sec:equilibrium semantics}, philosophically sound, mathematically solid, computationally tractable, and empirically adequate. The Setting Game, Content Selection Game, Generation Game, and Interpretation Game that constitute a (locutionary) Communication Game are developed in detail. So are the four Constraints: Phonetic, Syntactic, Semantic, and Flow. The solution I offer shows, moreover, that partial information games are universal in the algebraic sense discussed in \sectref{sec:universality}. Frege's two historic principles of compositionality and context are both reconciled and transcended. I develop a theory of vagueness and address the sorites, relate vagueness to essentially contested concepts, and model vague communication. Finally, as promised in \sectref{sec:equilibrium semantics}, I connect arguments in philosophy, linguistics, psychology, and computer science, unifying them through the framework of Equilibrium Linguistics.
+I believe \partref{part:III} gives a more or less complete solution to the problem of locutionary communication that is, as advertised in \sectref{sec:equilibrium semantics}, philosophically sound, mathematically solid, computationally tractable, and empirically adequate. The Setting Game, Content Selection Game, Generation Game, and Interpretation Game that constitute a (locutionary) Communication Game are developed in detail. So are the four Constraints: Phonetic, Syntactic, Semantic, and Flow. The solution I offer shows, moreover, that partial information games are universal in the algebraic sense discussed in \sectref{sec:universality}. Frege's two historic principles of compositionality and context are both reconciled and transcended. I develop a theory of vagueness and address the sorites, relate vagueness to essentially contested concepts, and model vague communication. Finally, as promised in \sectref{sec:equilibrium semantics}, I connect arguments in philosophy, linguistics, psychology, and computer science, unifying them through the framework of Equilibrium Linguistics.
 
 In the next Part, I consider illocutionary communication and explore the wider varieties of meaning.
