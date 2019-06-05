@@ -1,4 +1,4 @@
-\chapter{Semantic Change} \label{ch:semantic change}
+\chapter{Semantic change} \label{ch:semantic change}
 
 I referred in \sectref{sec:macro-semantics} to the fact that not only do conventional meanings emerge through communication, they also evolve over the centuries. Such semantic change is part of the broader changes that occur in all aspects of language. My goal here is to sketch the mechanism by which such changes occur and show how it fits in with the rest of Equilibrium Semantics. As such, it merely scratches the surface of the large field of historical linguistics and, in particular, historical semantics and historical pragmatics, an instance of which may be found in \citet{td:rsm} for example.
 
@@ -19,7 +19,7 @@ The second constraint that enables change is the mechanism through which overdet
 I will propose a model of language change based on overdetermination and modulation and on the propagation of an initial change through the community by looking at an example of semantic broadening. Many ideas in the theory of language change (e.g.\ \citealt{cb:hl}) appear to be qualitative and large-scale, that is, they do not examine language change in the small and then relate it to the community-wide scale. In my view, only this kind of communicative cum propagative process can really explain it. Large-scale evolutionary models by themselves abstract too much from the essence of the process. A better way is to see the evolution as a sequence of small steps, each of which is modeled in detail.
 
 
-\section{Semantic Broadening: The Communicative Aspect} \label{sec:Semantic Broadening: The Communicative Aspect}
+\section{Semantic broadening: The communicative aspect} \label{sec:Semantic Broadening: The Communicative Aspect}
 
 The modern English word \textit{dog} derives from the middle English word \textit{dogge} (which comes from the old English word \textit{docga}). Earlier, the word referred to a powerful breed of dogs (such as Great Danes) that originated in England. It was later semantically broadened (and transformed morphologically). This change must have come about through communicative interactions and I now look at the details of the semantic transformation. I abstract from the morphological change and so will use the word \textit{dog} to refer to both its narrower and broader meanings.
 
@@ -29,9 +29,10 @@ Presumably, the word was used by some particular speaker in a sentence to \emph{
 
 Suppose $\cal A$ and $\cal B$ have a poodle\footnote{Apparently, the poodle was imported into Great Britain from France in the 1870s but treat the time as the 15th century.} and they engage in the following dialogue.
 
-$\cal B$: When did you get home last night?
-
+\begin{quote}
+$\cal B$: When did you get home last night?\\
 $\cal A$: Around midnight. The dog didn't bark.
+\end{quote}
 
 It is not necessary to know \emph{why} $\cal A$ used \textit{dog} to refer to their poodle. Maybe it was meant affectionately. Be that as it may, in the scenario sketched, the word was used to refer to their poodle and not to some larger dog which would have been the then-standard use.
 
@@ -48,7 +49,7 @@ How does $\cal B$ decide whether the new conventional meaning $P^{\omega_2}_{2}$
 At this stage, we can say that in the communication between $\cal A$ and $\cal B$ a new conventional and therefore referential meaning get conveyed via modulation. There is no guarantee that the new conventional meaning will stick, even just between the two interlocutors. Indeed, most new meanings are short-lived. But any initial change has the potential to be propagated through the community and become a lasting change.
 
 
-\section{Semantic Broadening: The Propagative Aspect}
+\section{Semantic broadening: The propagative aspect}
 
 Recently, evolutionary models that abstract from the details of the propagation and study how suitable fractions of the population converge to a steady state based on positive or negative reinforcements have become popular.\footnote{See \citet{yang:pslc} and the references therein.} In my view, such models are too abstract, and assumptions involving reinforcements function more or less as mathematical fictions that enable the derivation of desirable empirical results. An alternative approach that builds on the preceding model of language change in the small is as follows.
 
@@ -68,22 +69,15 @@ As a result, the probability of a successful conversational event with a lasting
 
 Now let $k \in C$ be an arbitrary member distinct from $1$. Because the graphs are connected, there is always a path between $1$ and $k$. If we are able to compute the probability of $k$ entering $C_t$, then we would be able to see what happens to it in the limit as $t \rightarrow \infty$. Let this probability be denoted by $P(k \in C_t)$. 
 
-First consider a path $(1, k)$ of length $l = 1$ where the vertices $1$ and $k$ are adjacent. If $k$ fails to be in $C_t$ given a path of length $l = 1$, this must have the probability of a single failure $P([u \sim v\ \cap\ E]')$ repeating itself for instants at $1, 2, 3, \dots , t$. This allows us to write:
+First consider a path $(1, k)$ of length $l = 1$ where the vertices $1$ and $k$ are adjacent. If $k$ fails to be in $C_t$ given a path of length $l = 1$, this must have the probability of a single failure $P([u \sim v\ \cap\ E]')$ repeating itself for instants at $1, 2, 3, \dots , t$. This allows us to write: \[ P(k \not\in C_t \mid (1, k))\ =\ P([u \sim v\ \cap\ E]')^t\ =\ (1 - pq)^t \]
 
-\[ P(k \not\in C_t \mid (1, k))\ =\ P([u \sim v\ \cap\ E]')^t\ =\ (1 - pq)^t \]
+The probability of the complementary event, that is, the probability of success over this path, is: \[ P(k \in C_t \mid (1, k))\ =\ 1 - (1 - pq)^t \]
 
-The probability of the complementary event, that is, the probability of success over this path, is:
-
-\[ P(k \in C_t \mid (1, k))\ =\ 1 - (1 - pq)^t \]
-
-Next consider a path of length $l = 2$ and let the intervening node be $j$. That is, let the particular path be $(1, j, k)$ where $j \in C$ is different from $1$ and $k$. The key thing to be aware of here is that if $k$ is to become a member of $C_t$, then it can do so only after $j$ has first become a member of the change set. Let $t_0 = 0$, let $t_1$ be the time at which $j$ succeeds, and let $t_2 = t$. Then, it is possible to write the following:
-
-\[ P(k \in C_t \mid (1, j, k))\ =\ [1 - (1 - pq)^{t_1 - t_0}][1 - (1 - pq)^{t_2 - t_1}] \]
+Next consider a path of length $l = 2$ and let the intervening node be $j$. That is, let the particular path be $(1, j, k)$ where $j \in C$ is different from $1$ and $k$. The key thing to be aware of here is that if $k$ is to become a member of $C_t$, then it can do so only after $j$ has first become a member of the change set. Let $t_0 = 0$, let $t_1$ be the time at which $j$ succeeds, and let $t_2 = t$. Then, it is possible to write the following: \[ P(k \in C_t \mid (1, j, k))\ =\ [1 - (1 - pq)^{t_1 - t_0}][1 - (1 - pq)^{t_2 - t_1}] \]
 
 \noindent which is nothing but the success of $j$ at $t_1$ followed by the success of $k$ at $t_2$.
 
 Now suppose a particular path of arbitrary length $l$ is $(1, j_1, \ldots , j_{l - 1}, k)$, where each element of the sequence is a distinct member of $C$. Then for $k$ to become a member of the change set, it is necessary that each $j_m$ has to have become a member of the change set first and in the right order, starting with $j_1$ and ending with $j_{l - 1}$. If we let $t_1, t_2, \ldots , t_{l - 1}$ be the successive times at which the corresponding nodes $j_1, j_2, \ldots , j_{l - 1}$ become members of the change set, and if we let $\Delta t_{m} = t_m - t_{m - 1}$ for $m = 1, 2, \ldots , l$ with $t_0 = 0$ and $t_l = t$, the probability of success over this path is given by:
-
 \begin{equation}
 P(k \in C_t \mid (1, j_1, \ldots , j_{l - 1}, k))\ =\ \prod_{m = 1}^{l} [1 - (1 - pq)^{\Delta t_{m}}]
 \label{eq:connected}
@@ -91,22 +85,16 @@ P(k \in C_t \mid (1, j_1, \ldots , j_{l - 1}, k))\ =\ \prod_{m = 1}^{l} [1 - (1 
 
 As $\Delta t_{m} \rightarrow \infty$ for all $m$ from $1$ to $l$, the conditional probability of success tends to 1 as long as $pq > 0$, that is, as long as $p > 0$ and $q > 0$. 
 
-If there is more than one path between $1$ and $k$, the (unconditional) probability of success $P(k \in C_t)$ can only be greater. That is:
-
-
-\[ P(k \in C_t \mid (1, j_1, \ldots , j_{l - 1}, k))\ \leq\ P(k \in C_t)\ \leq\ 1 \] 
+If there is more than one path between $1$ and $k$, the (unconditional) probability of success $P(k \in C_t)$ can only be greater. That is: \[ P(k \in C_t \mid (1, j_1, \ldots , j_{l - 1}, k))\ \leq\ P(k \in C_t)\ \leq\ 1 \] 
 
 \noindent which implies that:
-
 \begin{equation}
 \lim_{t \rightarrow \infty} P(k \in C_t)\ =\ 1
 \end{equation}
 
 \noindent as well by the so-called squeeze theorem from elementary calculus.
 
-Since $k$ was arbitrarily chosen, this shows that:
-
-\[ \lim_{t \rightarrow \infty} C_t\ =\ C \] 
+Since $k$ was arbitrarily chosen, this shows that: \[ \lim_{t \rightarrow \infty} C_t\ =\ C \] 
 
 \noindent as long as $p > 0$ and $q > 0$. The convergence is independent of $n$, the size of the community. 
 
@@ -121,7 +109,7 @@ There are many ways of relaxing the simplifications assumed earlier. Many potent
 %What I have shown is a way to model pairwise conversations in a community that lead to interesting consequences for the whole community. Presumably, this is how language change diffuses in a population from the small to the large.
 
 
-\section{Generalizing the Model}
+\section{Generalizing the model}
 
 %I have shown earlier how communication may be viewed as conveying not just semantic contents but also syntactic and phonetic contents. 
 
