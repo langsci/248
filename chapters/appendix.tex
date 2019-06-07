@@ -1,4 +1,4 @@
-\chapter{Situated Games}
+\chapter{Situated games}
 
 %\hfill \begin{minipage}{2.8in}
 %
@@ -16,10 +16,6 @@
 %       \end{minipage}
 %
 %\bigskip
-
-
-
-
 
 The basic task of this Appendix is to derive the locutionary semantic map $g_u: {\cal L} \functionarrow {\cal G}$ introduced in \partref{part:III} from first principles. This derivation will provide the mathematical foundation for our informal discussion of situated games of partial information. It will also enable readers to see how all the other games such as syntactic games of partial information, illocutionary games of partial information, locutionary and illocutionary global games, Setting Games, Content Selection Games, Generation Games, Interpretation Games, Communication Games, and Language Games can be defined either analogously or by further construction. 
 
@@ -80,9 +76,7 @@ The key innovation in my presentation, based on \citet{parikh:diss,parikh:sga,pa
 %quite simple, I have used ``theorem'' and ``proposition'' differently, to mark the importance of the result for Equilibrium Semantics.
 
 
-
-
-\section{The Background}
+\section{The background}\label{sec:A.1}
 
 Let the sets of infons, situations, and propositions be $\cal I$, $\cal S$, and $\mathbf{PROP}$ respectively. These sets are assumed to be finite and represent the range of infons, situations, and propositions of interest relative to a small part of reality called the environment $\cal E$ within the overall informational space or ontology $\cal O$. There are various operations on these entities partially described in \sectref{sec:information} and these should be borne in mind as well.
 
@@ -152,7 +146,7 @@ The way the game-theoretic model works is that given an utterance situation $u$,
 
 
 
-\section{Some Prior Basic Elements}
+\section{Some prior basic elements}\label{sec:A.2}
 
 Some basic relations, infons, situations, and functions pertaining to communication are now defined.
 
@@ -168,9 +162,7 @@ The first is the relation $itc$ of intending to convey something. This is a thre
 
 We start with a specification of the possible initial situations in a game of partial information.
 
-\begin{definition}  $s_{1^y} \subset u$ and $s_{1^y} \vDash \{ \soa{itc, {\cal A}, \sigma_{1}^{y}, {\cal B}} \}$, where 
-$\sigma_1^{y} \in m_u(\varphi_1)$.  
-\end{definition}
+\begin{definition}  $s_{1^y} \subset u$ and $s_{1^y} \vDash \{ \soa{itc, {\cal A}, \sigma_{1}^{y}, {\cal B}} \}$, where $\sigma_1^{y} \in m_u(\varphi_1)$.\label{def:A.1}\end{definition}
 
 
 
@@ -189,7 +181,7 @@ I had earlier used $t$ to refer to various parse trees but I will be abstracting
 %As we have seen, defining $alt_u$ to yield just one alternative is \emph{not} required. It could quite easily be defined as a \emph{set} of alternatives that moreover do not necessarily have unique contents in $u$. But this needlessly complicates the model and we would lose sight of the forest for the trees!\footnote{Pun intended.}
 
 
-\begin{definition} \begin{tabular}[t]{l} 
+\begin{definition}\label{def:A.2}\begin{tabular}[t]{l} 
 {$act_{\cal A}: {\cal S} 	imes {\cal L} \functionarrow {\cal S}$}\\
 \vspace{0.075in} 
 {$act_{\cal A}(s,\varphi_1) = s \cup \{ \soa{hu,{\cal A},\varphi_1} \}$.}\\
@@ -198,7 +190,6 @@ I had earlier used $t$ to refer to various parse trees but I will be abstracting
 {$act_{\cal B} : \hbox{ran}(act_{\cal A}) 	imes {\cal I} \functionarrow {\cal S}$}\\
 {$act_{\cal B}(t,\tau) = t \cup \{ \soa{hi,{\cal B},\varphi_1,\tau} \}$ where $\varphi_1 = 2^{nd}[act_{\cal A}^{-1}(t)]$.}
 \end{tabular} \end{definition}
-\vspace{0.1in}
 
 \noindent Here $\hbox{ran}(act_{\cal A})$ is just the range of the function $act_{\cal A}$. These two functions give general descriptions of the consequences of $\cal A$'s uttering something in a situation and of $\cal B$'s subsequently interpreting it. All that happens is that the initial situations $s$ get augmented first with $\cal A$'s utterance and next with $\cal B$'s interpretation. It should be easy to see that if $s$ were taken to be one of the initial situations $s_{1^y}$ above and if appropriate utterances and interpretations were specified, then we would have the basic mechanism for generating the game tree via the updates given by $act_{\cal A}$ and $act_{\cal B}$. Thus, having started with the elements of situation theory and with some basic relations pertaining to communication, games of partial information will naturally follow.
 
@@ -207,7 +198,7 @@ This is partly where using situation theory enables us to make the information a
 We first remind ourselves of the form of games of incomplete information which will be the approximate target of our construction.
 
 
-\section{Games of Incomplete Information}
+\section{Games of incomplete information}\label{sec:A.3}
 
 As I have said, traditionally, games are approached directly. Although \citet{harsanyi:bayes} was the first person to define games of incomplete information, he did so in normal or strategic form.\is{game!normal form} What we need is their extensive form\is{game!extensive form} definition because that is where various aspects of the choice structure are made transparent. This was made clear by \citet{kuhn:egpi} who was the first to define extensive form games for games of perfect\is{game!perfect information} and imperfect\is{game!imperfect information} information. \citet{kw:se} extended Kuhn's definition to games of incomplete information. We use their formulation of a game of incomplete information as a tuple\is{game!incomplete information} of sets and functions as the approximate goal of 
 the situation-theoretic construction. This goal is approximate because games of partial information\is{game!partial information} are different in certain respects from incomplete information games. 
@@ -239,9 +230,7 @@ a mapping from the  terminal nodes into the set $\mathbb{R}$ of real numbers.
 %referred to Kreps and Wilson's paper for the formal definitions.
 
 
-
-
-\section{Games of Partial Information}
+\section{Games of partial information}\label{sec:A.4}
 
 I now construct locutionary semantic partial information games as described in \chapref{ch:defining communication games}. This is a straightforward matter of defining the elements of the tuple above one by one.
 
@@ -258,9 +247,9 @@ I now construct locutionary semantic partial information games as described in \
 
 %\subsection{Local Games}
 
-\subsection{Situations and Choices}
+\subsection{Situations and choices}\label{sec:A.4.1}
 
-As was said above in Section~A.1, given an utterance situation $u$, the speaker $\cal A$ forms  an intention to convey a (partial) content $\sigma_1$ (like \emph{Bill Smith}) as part of a full utterance and chooses a possibly ambiguous locution $\varphi_1$ (like ``Bill'') such that $\sigma_1 \in m_u(\varphi_1)$. The first element of the tuple that has to be constructed is the tree of possible situations and to do this we start with the initial situations identified in Definition~1 in Section~A.2. Then we define $\cal A$'s choice sets in each of these initial situations which just contain $\varphi_1$. Next, we generate the intermediate situations that result from $\varphi_1$ based on $act_{\cal A}$ from Definition~2 and then identify $\cal B$'s choices in these situations. Finally, we define the terminal situations that follow from $\cal B$'s interpretive  actions based on $act_{\cal B}$. This collection of situations forms a tree under the subset ordering.
+As was said above in \sectref{sec:A.1}, given an utterance situation $u$, the speaker $\cal A$ forms  an intention to convey a (partial) content $\sigma_1$ (like \emph{Bill Smith}) as part of a full utterance and chooses a possibly ambiguous locution $\varphi_1$ (like ``Bill'') such that $\sigma_1 \in m_u(\varphi_1)$. The first element of the tuple that has to be constructed is the tree of possible situations and to do this we start with the initial situations identified in Definition~\ref{def:A.1} in \sectref{sec:A.2}. Then we define $\cal A$'s choice sets in each of these initial situations which just contain $\varphi_1$. Next, we generate the intermediate situations that result from $\varphi_1$ based on $act_{\cal A}$ from Definition~\ref{def:A.2} and then identify $\cal B$'s choices in these situations. Finally, we define the terminal situations that follow from $\cal B$'s interpretive  actions based on $act_{\cal B}$. This collection of situations forms a tree under the subset ordering.
 
 \begin{definition} \begin{tabular}[t]{l} 
 
@@ -306,8 +295,8 @@ As was said above in Section~A.1, given an utterance situation $u$, the speaker 
 %\phantom{$T\subnum{2}(\varphi) = \{$}{such that $g(t',p) = t 
 %\}.$}\\ {}\\ 
 
-{$T = \bigcup\__i T\__{i}$} \end{tabular} \end{definition}
-\vspace{0.1in}
+{$T = \bigcup\__i T\__{i}$} \end{tabular}\label{def:A.3}\end{definition}
+
 
 \noindent Each $C_{\cal A}(s)$ and $C_{\cal B}(t)$ are the same and are $\cal A$'s and $\cal B$'s choice sets in the relevant situations.
 
@@ -328,7 +317,7 @@ As was said above in Section~A.1, given an utterance situation $u$, the speaker 
 %$C_{\cal A}(s')$}\\ {or (3) $t=t'$.} \end{tabular} \end{definition}
 
 
-\begin{definition} \begin{tabular}[t]{l} 
+\begin{definition}\label{def:A.4}\begin{tabular}[t]{l} 
 {$\forall t,t' \in T\subnum{0}$, $t \equiv\!\!\__{\cal A}\,\, t'$ iff $t = t'$}\\ 
 \noindent {$\forall t,t' \in T\subnum{1}$,  $t \equiv\!\!\__{\cal B}\,\, t'$ 
 %iff $t = t'$}\\ {or for  some $\alpha$ in both $C_{\cal A}(s)$ and $C_{\cal A}(s')$}\\ {there exist $s,s' \in  T\subnum{0}$}\\ 
@@ -339,14 +328,14 @@ As was said above in Section~A.1, given an utterance situation $u$, the speaker 
 
 
 
-\begin{proposition} \hspace{.1pc} $\equiv\!\!\__{\cal A}$, $\equiv\!\!\__{\cal
+\begin{proposition} \label{prop:A.2}\hspace{.1pc} $\equiv\!\!\__{\cal A}$, $\equiv\!\!\__{\cal
 B}$ are equivalence relations. \end{proposition}
 
 
 \noindent These equivalence relations capture the 
 relevant epistemic properties of the two agents as follows.
 
-\begin{proposition} \hspace{.1pc}
+\begin{proposition}\label{prop:A.3} \hspace{.1pc}
 \begin{itemize} \item {For all $t,t' \in 
 T\subnum{1}$, $t \equiv\!\!\__{\cal B}\,\, t'$ implies 
 $C_{\cal B}(t) = C_{\cal B}(t')$.}
@@ -357,16 +346,16 @@ implies $t \not\subset t'$.}
 \item {For all $t,t' \in T\subnum{1}$, $t \equiv\!\!\__{\cal
 B}\,\, t'$ implies $\eta(t) = \eta(t')$.} 
 \end{itemize}
-\end{proposition}
+% \end{proposition}
 
-\noindent The first statement says that $\cal B$ has the same choices at each of various equivalent situations. This is important because if the choices weren't the same the agent could use that information to distinguish between epistemically equivalent situations, a contradiction. The second statement says that of two equivalent situations one cannot precede the other. This again makes intuitive sense because if such precedence were possible, the agent would know it, and it would make the situations epistemically distinguishable. The last statement requires Definition~8 made below and says simply that the same agent has to act in all equivalent situations. The corresponding properties for ${\cal A}$ are even more trivially true. The key thing to note is that all these properties can now be \emph{proved} from more basic assumptions.
+\noindent The first statement says that $\cal B$ has the same choices at each of various equivalent situations. This is important because if the choices weren't the same the agent could use that information to distinguish between epistemically equivalent situations, a contradiction. The second statement says that of two equivalent situations one cannot precede the other. This again makes intuitive sense because if such precedence were possible, the agent would know it, and it would make the situations epistemically distinguishable. The last statement requires Definition~\ref{def:A.8} made below and says simply that the same agent has to act in all equivalent situations. The corresponding properties for ${\cal A}$ are even more trivially true. The key thing to note is that all these properties can now be \emph{proved} from more basic assumptions.
 
 
-\subsection{Actions}
+\subsection{Actions}\label{sec:A.4.2}
 
 The third element of the game tuple above, the 
 set of actions in the game, is nothing but the union of all the choice sets 
-in Definition~3. This gathering of all the actions into a single set is just to maintain conformity with Kreps and Wilson's tuple, so that the game is rendered in a familiar form.
+in Definition~\ref{def:A.3}. This gathering of all the actions into a single set is just to maintain conformity with Kreps and Wilson's tuple, so that the game is rendered in a familiar form.
 
 \begin{definition} $ACT = [\bigcup\__{s \in T\subnum{0}} 
 C_{\cal A}(s) ] \cup [\bigcup\__{t \in T\subnum{1}} C_{\cal B}(t) ] = \{\varphi_1\} \cup m_u(\varphi_1)$
@@ -374,7 +363,7 @@ C_{\cal A}(s) ] \cup [\bigcup\__{t \in T\subnum{1}} C_{\cal B}(t) ] = \{\varphi_
 
 The map $act$ assigns an appropriate set of actions in $ACT$ to each noninitial situation in $T$.
 
-\begin{definition} \begin{tabular}[t]{l} 
+\begin{definition}\label{def:A.6}\begin{tabular}[t]{l} 
 {$act: T\subnum{1} \cup T\subnum{2} \functionarrow ACT$}\\
 {\hspace{0pc}\vtop{\halign{$#$\ &\ $#$\ &\ $#$\ &\ $#$\hfil\cr 
 act(t)&\!\!\! = 2^{nd}[act_{\cal A}^{-1}(t)] &\! = \ \varphi_1 & \hbox{ if } t \in T\subnum{1} \cr
@@ -382,11 +371,11 @@ act(t)&\!\!\! = 2^{nd}[act_{\cal A}^{-1}(t)] &\! = \ \varphi_1 & \hbox{ if } t \
 }}} 
 \end{tabular}
 \end{definition}
-\vspace{0.1in}
+
 \noindent $act$ maps a situation into the action that brings it about. The reason for labeling situations or nodes in the game tree with actions in this manner is because $\tuple{T,\subset}$ is a tree and this means that each noninitial situation has a single action that generates it.
 
 
-\subsection{Agents}
+\subsection{Agents}\label{sec:A.4.3}
 
 \begin{definition} $N = \{{\cal A}, {\cal B}\}$ is the set of agents.
 \end{definition}
@@ -394,19 +383,19 @@ act(t)&\!\!\! = 2^{nd}[act_{\cal A}^{-1}(t)] &\! = \ \varphi_1 & \hbox{ if } t \
 
 The function $\eta$ below determines whose turn it is to act.
 
-\begin{definition} \begin{tabular}[t]{l} {$\eta: T\subnum{0} \cup T\subnum{1} \functionarrow N$}\\
+\begin{definition}\label{def:A.8}\begin{tabular}[t]{l} {$\eta: T\subnum{0} \cup T\subnum{1} \functionarrow N$}\\
 {\hspace{0pc}\vtop{\halign{$#$\ &\ $#$\ &\ $#$\hfil\cr 
 \eta(t)&\!\!\! =
 {\cal A} & \hbox{ if } t \in T\subnum{0} \cr &\!\!\! = {\cal B} & 
 \hbox{ if } t \in T\subnum{1}\cr
 }}} 
 \end{tabular} \end{definition}
-\vspace{0.1in}
+
 \noindent This is just a formal way of saying that $\cal A$ is the speaker and $\cal B$ the addressee.
 
 
 
-\subsection{Prior Probabilities}
+\subsection{Prior probabilities}\label{sec:A.4.4}
 
 The next item in the tuple is the prior probabilities. As we have seen, they are the most complex part of the game-theoretic structure because it is through them that each local game is connected with all the other local games, both locutionary and illocutionary, that materialize when a sentence is uttered. To enable the definition below, assume that the whole sentence uttered is $\varphi = \varphi_1\varphi_2\ldots\varphi_n$ for some $n$, as was done in \sectref{sec:solving locutionary global games}. In addition, remember that $x_{-1}$ is a variable that stands for any of the vectors formed by taking all the combinations of the possible semantic contents of locutions other than $\varphi_1$. As I am abstracting from syntax here, we do not consider the vector of possible syntactic contents $y$.
 
@@ -420,9 +409,9 @@ The next item in the tuple is the prior probabilities. As we have seen, they are
 This is a key reason why games of partial information differ from games of incomplete information.\is{game!incomplete information} Incomplete information games have a single pre-given probability distribution; as was first explained in \sectref{sec:generation game}, partial information games have multiple probability distributions for each local game. These form a \emph{third} set of \emph{strategic} choice variables along with the choice of utterance and interpretation from each $C_{\cal A}(s)$ and $C_{\cal B}(t)$. This strategic characteristic is made possible by the presence of the conditioning variables $x_{-1}$ because each different instantiation of these variables creates a different probability distribution $P(\sigma_1^{y} \mid x_{-1}; u)$ and the agents have to \emph{choose} one distribution from among many based on whether all such choices are in \emph{global} equilibrium\is{equilibrium!global} or not, the latter just being the equilibrium of the global game.
 
 
-\subsection{Information Sets}
+\subsection{Information sets}\label{sec:A.4.5}
 
-Definition~4 and Propositions~2 and 3 allow us to specify the information sets\is{information set} of each agent. They are \emph{information} sets precisely because they have been shown to have the appropriate epistemic properties.
+Definition~\ref{def:A.4} and Propositions~\ref{prop:A.2} and \ref{prop:A.3} allow us to specify the information sets\is{information set} of each agent. They are \emph{information} sets precisely because they have been shown to have the appropriate epistemic properties.
 
 \begin{definition} \begin{tabular}[t]{l} {$h_{\cal A}: T\subnum{0} \functionarrow \powset(T)$}\\ 
 {$ h_{\cal A}(t) = \{ t' \in T\subnum{0} \mid
@@ -453,12 +442,12 @@ t' \equiv\!\!\__{\cal B}\,\, t \} = T\subnum{1} $}\\
 
 \end{tabular} 
 \end{definition}
-\vspace{0.1in}
+
 \noindent Again, I observe that the situation-theoretic construction makes it possible to build information sets from the simpler objects $\equiv\!\!\__{\cal A}$ and $\equiv\!\!\__{\cal B}$ rather than just defining and imposing them outright. It provides an explanation of why they arise from the more basic epistemic properties of the game.
 
 
 
-\subsection{Payoffs}
+\subsection{Payoffs}\label{sec:A.4.6}
 
 At one level, the payoffs\is{payoffs} are the easiest elements to define as all that is needed is two real-valued functions defined on the terminal situations in $T\subnum{2}$, with the understanding that each function encodes the same underlying preferences up to positive affine transformations. This would be the most general case. However, it is desirable to constrain these functions to respect the inequalities introduced in \sectref{sec:generation game}.
 %~\\
@@ -484,7 +473,7 @@ To identify terminal situations where the interpretation is correct, we require 
 
 \[ 2^{nd}[act_{\cal B}^{-1}(t)] = \sigma_1^y \]
 %~\\
-\noindent Both these conditions flow from Definitions~1, 2, and 6. The first condition simply traces the path back from the terminal situation $t$ to the initial situation $s_{1^y}$ in $T\subnum{0}$ by Definition~2 and the second condition requires that the interpretation leading to the terminal situation be $\sigma_1^y$, which is the content intended in $s_{1^y}$ by Definition~1, thereby ensuring that the interpretation is the right one. These two conditions jointly capture the requirements for the highest payoffs like  $a_{\cal A}$ and its cognates. Similar conditions with suitable modifications are required to identify payoffs like $c_{\cal A}$ and its cognates.
+\noindent Both these conditions flow from Definitions~\ref{def:A.1}, \ref{def:A.1}, and~\ref{def:A.6}. The first condition simply traces the path back from the terminal situation $t$ to the initial situation $s_{1^y}$ in $T\subnum{0}$ by Definition~\ref{def:A.2} and the second condition requires that the interpretation leading to the terminal situation be $\sigma_1^y$, which is the content intended in $s_{1^y}$ by Definition~\ref{def:A.1}, thereby ensuring that the interpretation is the right one. These two conditions jointly capture the requirements for the highest payoffs like  $a_{\cal A}$ and its cognates. Similar conditions with suitable modifications are required to identify payoffs like $c_{\cal A}$ and its cognates.
 
 \begin{definition} \begin{tabular}[t]{l} {$v_{\cal A}: T\subnum{2} \functionarrow \mathbb{R}$}\\
 {$v_{\cal B}: T\subnum{2} \functionarrow \mathbb{R}$}\\
@@ -529,22 +518,21 @@ Both $v_{\cal A}$ and $v_{\cal B}$ obey the same constraints although the actual
 %If a theory of costs\is{costs} and benefits\is{benefits} were available, it would have been possible to break down the payoff functions above into cost and benefit functions. Such costs and benefits depend on $u$ and $\cal L$. Making this dependence explicit would reinforce the situatedness of choice and game theory.
 
 
-\subsection{The Game Tuple}
+\subsection{The game tuple}\label{sec:A.4.7}
 
 All the elements required for a local game are now at hand. 
 
 
-\begin{definition} $g_u(\varphi_1) = \tuple{T,\subset \sep ACT,act \sep N,\eta \sep P \sep H \sep v}$ 
-\end{definition}
+\begin{definition} $g_u(\varphi_1) = \tuple{T,\subset \sep ACT,act \sep N,\eta \sep P \sep H \sep v}$ \end{definition}
 
 
 \noindent The full local game is of course $\tuple{g_u(\varphi_1), {\cal I}_g}$, where ${\cal I}_g$ represents common knowledge between $\cal A$ and $\cal B$ of $g_u(\varphi_1)$.\is{game!partial information} In general, ${\cal I}_g$ represents the \emph{information structure} of the \emph{strategic interaction} and it may range from no shared information to full common knowledge.\footnote{See \citet[Section~3.3.4]{parikh:le} for further discussion.} This is part of the advantage gained by the situation-theoretic construction because it permits a natural extension of games where common knowledge obtains to more general strategic interactions where common knowledge may not obtain.
 
-Earlier, in Section~A.1, I chose to avoid undue generality by fixing the utterance to be 
+Earlier, in \sectref{sec:A.1}, I chose to avoid undue generality by fixing the utterance to be 
 $\varphi_1$. It is now time to relax this constraint by letting the utterance vary freely over  $\cal L$.\footnote{Remember that $\cal L$ is the free monoid generated from the vocabulary $\cal W$ by the special concatenation operation $\circ_G$ together with the empty string $e$ and the zero element $0$ as mentioned in \sectref{sec:language definition}. Needless to say, $m_u(e) = \{\mathbf{1}\}$, $m_u(0) = \{\mathbf{0}\}$, and $m_u(\alpha) = \{\mathbf{0}\}$ when $\alpha \in {\cal L}$ is a grammatical but meaningless expression.}
 
 \begin{definition} $g_u(\alpha)$ where $\alpha \in {\cal L}$ is defined analogously by replacing 
-$\varphi_1$ with $\alpha$ and making all other corresponding changes in each component of the game tuple above. $g_u(e) = g_e$  and $g_u(0) = g_0$.\footnote{See \sectref{sec:universality}.} ${\cal G}$ is defined to be just the collection of all the tuples so obtained. This gives us the map $g_u: {\cal L} \functionarrow {\cal G}$.\footnote{I have already specified in Section~A.2 that we have an anchor $f$ such that $f(\dot{\varphi}) = \alpha$ in order to secure that $\alpha$ is uttered in $u$. It is necessary to make the game map a total function. We can do this as follows: 
+$\varphi_1$ with $\alpha$ and making all other corresponding changes in each component of the game tuple above. $g_u(e) = g_e$  and $g_u(0) = g_0$.\footnote{See \sectref{sec:universality}.} ${\cal G}$ is defined to be just the collection of all the tuples so obtained. This gives us the map $g_u: {\cal L} \functionarrow {\cal G}$.\footnote{I have already specified in \sectref{sec:A.2} that we have an anchor $f$ such that $f(\dot{\varphi}) = \alpha$ in order to secure that $\alpha$ is uttered in $u$. It is necessary to make the game map a total function. We can do this as follows: 
 
 \begin{equation}
 g_{u[f]}(\alpha) = \left\{ \begin{array}{ll}
@@ -601,9 +589,7 @@ where $g$ is the game defined above when $\alpha$ is uttered in $u$ and where $g
 
 %\hspace{.1pc}
 
-\begin{theorem} {$g_u(\alpha)$ where $\alpha \in {\cal L}$ is a local game of partial
-information.}
-\end{theorem}
+\begin{theorem} {$g_u(\alpha)$ where $\alpha \in {\cal L}$ is a local game of partial information.}\end{theorem}
 
 \noindent As observed above, instead of simply \emph{defining} or legislating that the tuple above is a game, the situation-theoretic construction makes this fact a \emph{consequence} derived from more basic assumptions. It is possible to \emph{prove} that the tuple is a local game of partial information.
 
@@ -650,7 +636,7 @@ We can now introduce syntactic contents into these games and define syntactic lo
 %\is{game!signaling|)}
 
 
-\section{The Product of Two Games}
+\section{The product of two games}\label{sec:A.5}
 
 Now that games of partial information have been built and their collection $\cal G$ identified, it is possible to define their product $\otimes$. What has to be done is to start with two tuples, one for each multiplicand, and then construct the tuple for their product, building each component one by one from the components of the multiplicands. Along the way, it is necessary to prove that each component does in fact have all the required properties. For example, the payoff inequalities have to be preserved in the product when they are defined to be the sum of the corresponding payoffs in the multiplicands. 
 
@@ -971,31 +957,19 @@ I leave this construction and the proofs of the corresponding facts as an exerci
 
 %Instead of defining $\cal G$ directly as was done in Definition~13, it could be freely generated from just the lexical games\is{game!lexical} via the product. Both approaches yield the same set.
 
-\section{The Compact Form}
+\section{The compact form}\label{sec:A.6}
 
 %It is straightforward to collect all the local games generated by an utterance into a locutionary global game. 
 
 A compact form for the locutionary global game can now be defined as discussed in \sectref{sec:solving locutionary global games}. This is straightforward to do as all its components have already been constructed.
 
 
-\section{Solution Concepts}
+\section{Solution concepts}\label{sec:A.7}
 
 The next step would be to define the notion of a strategy for such games and examine various solution concepts. Because all the local games generated by an utterance are interconnected through the prior probabilities, it becomes necessary to extend the standard definitions of a strategy and the corresponding equilibria. This involves \emph{two} things: one is to provide for the strategic nature of the prior probability distributions and the other is to build a definition of \emph{global} equilibrium\is{equilibrium!global} based on the solution concept one starts with, presumably Pareto-Nash equilibrium. I have shown how to do this informally in \sectref{sec:solving locutionary global games} and the definitions do not pose any special obstacles.
 
-Whatever solution concepts we employ, they make possible the construction of the second basic map of Equilibrium Semantics $f_u: {\cal G} \functionarrow {\cal I}$, whose existence and uniqueness were established by the universality result of \sectref{sec:universality}.\is{universality} Once we have both maps $g_u$ and $f_u$, we have essentially derived our fundamental global fixed point equations: Equations~\ref{eq:simple} and \ref{eq:simple with payoffs} from Theorems~\ref{thm:simple equation} and \ref{thm:compatibility with payoffs}.
+Whatever solution concepts we employ, they make possible the construction of the second basic map of Equilibrium Semantics $f_u: {\cal G} \functionarrow {\cal I}$, whose existence and uniqueness were established by the universality result of \sectref{sec:universality}.\is{universality} Once we have both maps $g_u$ and $f_u$, we have essentially derived our fundamental global fixed point equations: Equations~\ref{eq:simple} and \ref{eq:simple with payoffs} from Theorems~\ref{thm:simple equation} and~\ref{thm:compatibility with payoffs}.
 
 %\[ {\cal C}_u(\alpha,  P(x \mid u)) = f_u[g_u(\alpha, P(x \mid u))] = x \]
 %~\\
 This completes a mathematical rendering of the core framework of Equilibrium Semantics from first principles. It can be extended to all the other games mentioned at the start of the Appendix in a natural way.
-
-
-
-
-
-
-
-
-
-
-
-
