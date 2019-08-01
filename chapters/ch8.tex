@@ -65,7 +65,6 @@ and
 \end{align*}
 
 \noindent or
-
 \begin{align*}
          & P(\sigma_1 \cond \sigma_2, t_1, t_2; u)a_{\cal A} + P(\sigma'_1 \cond \sigma_2, t_1, t_2; u)c'_{\cal A}\\
     \geq &  P(\sigma_1 \cond \sigma'_2, t_1, t_2; u)c_{\cal A} + P(\sigma'_1 \cond \sigma'_2, t_1, t_2; u)a'_{\cal A}
@@ -79,7 +78,6 @@ and
 \noindent Likewise, for $(\sigma_2, \sigma_1)$ to be a Pareto-Nash equilibrium of $g_2$, we require that:
 
 \noindent either
-
 \begin{align*} 
         & P(\sigma_2 \cond \sigma_1, t_1, t_2; u)a_{\cal A} + P(\sigma'_2 \cond \sigma_1, t_1, t_2; u)c'_{\cal A}\\
         > & P(\sigma_2 \cond \sigma'_1, t_1, t_2; u)c_{\cal A} + P(\sigma'_2 \cond \sigma'_1, t_1, t_2; u)a'_{\cal A}
@@ -91,7 +89,6 @@ and
 \end{align*}
 
 \noindent or
-
 \begin{align*}
          & P(\sigma_2 \cond \sigma_1, t_1, t_2; u)a_{\cal A} + P(\sigma'_2 \cond \sigma_1, t_1, t_2; u)c'_{\cal A}\\
     \geq & P(\sigma_2 \cond \sigma'_1, t_1, t_2; u)c_{\cal A} + P(\sigma'_2 \cond \sigma'_1, t_1, t_2; u)a'_{\cal A} 
@@ -284,7 +281,7 @@ and
 
 \noindent This implies either $jk > lm$ and $jl \geq km$ or $jk \geq lm$ and $jl > km$, both of which imply $j > m$, exactly as we had when we considered the distributed form. But notice how much easier it was to obtain the result.
 
-So far, I have considered just the four lexical variables $x_1$, $x_2$, $y_1$, $y_2$ derived from the words in the sentence as players but there are, in fact, potentially phrasal and sentential variables too. These are $x_{12} = x_1 \odot x_2$ and $y_{12} = y_1 \star y_2$. The four possible strategies of $x_{12}$ are $\sigma_1\sigma_2$, $\sigma_1\sigma'_2$, $\sigma'_1\sigma_2$, and $\sigma'_1\sigma'_2$ and the single strategy of $y_{12}$ is $t_1t_2$. But since these choices of the sentential variables are in fact determined by the choices of the four lexical players, these sentential players have no \emph{real} choice beyond the lexical choices. And, indeed, this is reflected in the fact that the payoffs the semantic sentential variables receive from the four strategy choices -- $P(\sigma_1,\sigma_2 \cond t_1, t_2; u) = j$, $P(\sigma_1,\sigma'_2 \cond t_1, t_2; u) = k$, $P(\sigma'_1,\sigma_2 \cond t_1, t_2; u) = l$, and $P(\sigma'_1,\sigma'_2 \cond t_1, t_2; u) = m$ -- are also ordered by the requirements we have displayed above for various equilibria. For example, as we just saw, if $(\sigma_1, \sigma_2)$ is a Pareto-Nash equilibrium of the compact form, then $P(\sigma_1,\sigma_2 \cond t_1, t_2; u) = j$ is automatically the maximum among \[\Bigl\{P(\sigma_1,\sigma_2 \cond t_1, t_2; u), P(\sigma_1,\sigma'_2 \cond t_1, t_2; u), P(\sigma'_1,\sigma_2 \cond t_1, t_2; u), P(\sigma'_1,\sigma'_2 \cond t_1, t_2; u)\Bigr\}\allowbreak = \{j, k, l, m\}\text{.}\] This leads to an insight that is parallel to Theorem~\ref{thm:one} above.
+So far, I have considered just the four lexical variables $x_1$, $x_2$, $y_1$, $y_2$ derived from the words in the sentence as players but there are, in fact, potentially phrasal and sentential variables too. These are $x_{12} = x_1 \odot x_2$ and $y_{12} = y_1 \star y_2$. The four possible strategies of $x_{12}$ are $\sigma_1\sigma_2$, $\sigma_1\sigma'_2$, $\sigma'_1\sigma_2$, and $\sigma'_1\sigma'_2$ and the single strategy of $y_{12}$ is $t_1t_2$. But since these choices of the sentential variables are in fact determined by the choices of the four lexical players, these sentential players have no \emph{real} choice beyond the lexical choices. And, indeed, this is reflected in the fact that the payoffs the semantic sentential variables receive from the four strategy choices -- $P(\sigma_1,\sigma_2 \cond t_1, t_2; u) = j$, $P(\sigma_1,\sigma'_2 \cond t_1, t_2; u) = k$, $P(\sigma'_1,\sigma_2 \cond t_1, t_2; u) = l$, and $P(\sigma'_1,\sigma'_2 \cond t_1, t_2; u) = m$ -- are also ordered by the requirements we have displayed above for various equilibria. For example, as we just saw, if $(\sigma_1, \sigma_2)$ is a Pareto-Nash equilibrium of the compact form, then $P(\sigma_1,\sigma_2 \cond t_1, t_2; u) = j$ is automatically the maximum among \[\Bigl\{P(\sigma_1,\sigma_2 \cond t_1, t_2; u), P(\sigma_1,\sigma'_2 \cond t_1, t_2; u), P(\sigma'_1,\sigma_2 \cond t_1, t_2; u), P(\sigma'_1,\sigma'_2 \cond t_1, t_2; u)\Bigr\}\allowbreak =\allowbreak \{j, k, l, m\}\text{.}\] This leads to an insight that is parallel to Theorem~\ref{thm:one} above.
 
 \begin{theorem} \label{thm:three}
 The compact form of a locutionary global game contains all the information required to determine its equilibrium. There is no need to consider nonlexical players.
@@ -469,7 +466,7 @@ Others using game theory in this field (e.g.\ \citet{benz:gtp}),\ia{Benz, Anton@
 While the results of \sectref{sec:solving locutionary global games} are quite powerful, they depend on a condition that has been left implicit.\footnote{I did this deliberately to simplify the discussion as will become clear in this section.} Consider an utterance of the following sentence:
 
 \begin{exe}
-\exi{($\mu$)} The boy saw the girl with a telescope. 
+\ex The boy saw the girl with a telescope. ($:=\mu$)
 \end{exe}
 
 \noindent As is well known, the prepositional phrase \Expression{with a telescope} can attach either to the verb \Expression{saw} (i.e.\ to the verb phrase \Expression{saw the girl}) or to the noun \Expression{girl} and so $\mu$ is syntactically ambiguous. But there is no syntactic ambiguity at the level of lexical categories if they are expressed as in an ordinary CFG. The product of the optimal lexical parses obtained via Theorem~\ref{thm:simple equation} would then always yield \emph{two} sentential parses even though the situation $u$ in which $\mu$ is uttered may suffice to disambiguate between them.
