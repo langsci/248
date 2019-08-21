@@ -10,6 +10,16 @@
 \DeclareMathOperator*{\argmax}{argmax} %argmax notation
 \newcommand{\nn}[1]{#1n}
 
+\makeatletter
+\renewcommand{\lsDedication}{\thispagestyle{empty}
+	\vspace*{.25\textheight}
+	\begin{center}
+	{\lsDedicationFont
+	\@dedication\par}
+	\end{center}
+	\vspace*{\fill}
+	\clearpage}
+\makeatother
 
 \def\lll{\langle\!\langle\,} 
 \def\ggg{\,\rangle\!\rangle} 

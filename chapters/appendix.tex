@@ -173,7 +173,7 @@ I had earlier used $t$ to refer to various parse trees but I will be abstracting
 %In my previous book with the old partial information games, this definition and the basic relations above were then used to specify the alternatives to $\varphi_1$ that $\cal A$ might consider and the consequences of $\cal A$'s and $\cal B$'s possible actions.
 
 
-%\begin{definition} $alt_u: {\cal L} 	imes {\cal I} \functionarrow {\cal L}$ with $alt_u(\varphi_1, \sigma_{1}^{y}) = \varphi_{1}^{y+1}$ where $\varphi_{1}^{y+1} \in {\cal L}$ is a minimal cost alternative to $\varphi_1$ such that its unique possible content in $u$ is $\sigma_{1}^{y}$. That is, $m_u(\varphi_{1}^{y+1}) = \{ \sigma_{1}^{y} \}$. Moreover, the cost of $\varphi_{1}^{y+1}$ is always greater than the cost of $\varphi_{1}$ for all $y$. In the special case when $m_u(\varphi_{1}) = \{ \sigma_{1} \}$ is a singleton, then $alt_u(\varphi_1, \sigma_{1}) = \varphi_{1}$.
+%\begin{definition} $alt_u: {\cal L} \times {\cal I} \functionarrow {\cal L}$ with $alt_u(\varphi_1, \sigma_{1}^{y}) = \varphi_{1}^{y+1}$ where $\varphi_{1}^{y+1} \in {\cal L}$ is a minimal cost alternative to $\varphi_1$ such that its unique possible content in $u$ is $\sigma_{1}^{y}$. That is, $m_u(\varphi_{1}^{y+1}) = \{ \sigma_{1}^{y} \}$. Moreover, the cost of $\varphi_{1}^{y+1}$ is always greater than the cost of $\varphi_{1}$ for all $y$. In the special case when $m_u(\varphi_{1}) = \{ \sigma_{1} \}$ is a singleton, then $alt_u(\varphi_1, \sigma_{1}) = \varphi_{1}$.
 %\end{definition}
 
 %\noindent For the purposes of the model, the cost\is{costs} of uttering an expression and perceiving and interpreting it are taken as given. To keep things simple, the definition above refers just to ``cost'' without specifying whether it is the cost for $\cal A$ or $\cal B$ and whether these costs are identical. A whole \emph{theory} of cost would be required to do justice to this aspect of payoffs and is obviously beyond our scope here. If there is more than one minimal cost alternative, one can be picked arbitrarily. 
@@ -182,12 +182,12 @@ I had earlier used $t$ to refer to various parse trees but I will be abstracting
 
 
 \begin{definition}\label{def:A.2}\begin{tabular}[t]{l} 
-{$act_{\cal A}: {\cal S} 	imes {\cal L} \functionarrow {\cal S}$}\\
-\vspace{0.075in} 
+{$act_{\cal A}: {\cal S} \times {\cal L} \functionarrow {\cal S}$}\\
+\vspace{0.075in}%
 {$act_{\cal A}(s,\varphi_1) = s \cup \{ \soa{hu,{\cal A},\varphi_1} \}$.}\\
 %{}\\ 
 %\vspace{0.5in}
-{$act_{\cal B} : \hbox{ran}(act_{\cal A}) 	imes {\cal I} \functionarrow {\cal S}$}\\
+{$act_{\cal B} : \hbox{ran}(act_{\cal A}) \times {\cal I} \functionarrow {\cal S}$}\\
 {$act_{\cal B}(t,\tau) = t \cup \{ \soa{hi,{\cal B},\varphi_1,\tau} \}$ where $\varphi_1 = 2^{nd}[act_{\cal A}^{-1}(t)]$.}
 \end{tabular} \end{definition}
 

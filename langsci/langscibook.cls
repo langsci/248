@@ -734,8 +734,8 @@
 	]{DejaVuSansMono.ttf}
 
 \iflsNewtxmath\else
+\setmathfont[AutoFakeBold,Path=\fontpath]{libertinusmath-regular.otf}
 \setmathfont[range={cal,bfcal},StylisticSet=1,Path=\fontpath]{xits.otf}
-\setmathfont[AutoFakeBold]{libertinusmath-regular.otf}
 \fi
 
 \iflsModfonts% use Langsci fonts
