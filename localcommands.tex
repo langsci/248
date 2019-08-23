@@ -6,6 +6,9 @@
 \newcommand*{\Expression}[1]{\textsc{\MakeLowercase{#1}}}
 \renewcommand{\lsDedicationFont}{\raggedleft\doublespacing\normalfont\itshape}
 
+\counterwithout*{equation}{chapter}
+\renewcommand{\theequation}{\arabic{equation}}
+
 \newcommand{\cond}{\,|\,} %conditional probability notation
 \DeclareMathOperator*{\argmax}{argmax} %argmax notation
 \newcommand{\nn}[1]{#1n}
