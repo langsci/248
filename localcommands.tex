@@ -5,6 +5,7 @@
 
 \newcommand*{\Expression}[1]{\textsc{\MakeLowercase{#1}}}
 \renewcommand{\lsDedicationFont}{\raggedleft\doublespacing\normalfont\itshape}
+\patchcmd{\mkbibindexname}{\ifdefvoid{#3}{}{\MakeCapital{#3} }}{\ifdefvoid{#3}{}{#3 }}{}{\AtEndDocument{\typeout{mkbibindexname could not be patched.}}}
 
 \counterwithout*{equation}{chapter}
 \renewcommand{\theequation}{\arabic{equation}}

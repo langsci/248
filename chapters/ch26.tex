@@ -92,7 +92,7 @@ The idea of resource situations comes from \citet{bp:sa}. At least one resource 
 In \sectref{sec:information} I had defined the following function:
 
 \begin{equation}
-e(P,s) = \left\{ \begin{array}{ll}
+e(P,s) = \left\{\begin{array}{@{}l@{~}l@{}}
 a & \mbox{if there is exactly one object $a$ having $P$ in $s$} \\
 \{x \mid s \vDash \soa{P;\ x}\} & \mbox{otherwise}
 \label{eq:eps}			\end{array}
@@ -102,10 +102,10 @@ a & \mbox{if there is exactly one object $a$ having $P$ in $s$} \\
 In the context of causal chains and resource situations for names, I substitute $P^N$ and $r_u$ for $P$ and $s$:
 
 \begin{equation}
-e(P^{\hbox{\emph{N}}},r_u) = \left\{ \begin{array}{ll}
-a & \mbox{if there is exactly one object $a$ having $P^{\hbox{\emph{N}}}$ in $r_u$} \\ 
+e(P^{\hbox{\emph{N}}},r_u) = \left\{\begin{array}{@{}l@{}}
+a,~\text{if there is exactly one object $a$ having $P^{\hbox{\emph{N}}}$ in $r_u$} \\ 
 %& \mbox{and $r_u \vDash \soa{R^c;\ a;\ N\ u}$} \\
-\{x \mid r_u \vDash \soa{P^{\hbox{\emph{N}}};\ x}\} & \mbox{otherwise}
+\{x \mid r_u \vDash \soa{P^{\hbox{\emph{N}}};\ x}\},~\mbox{otherwise}
 \label{eq:eps}			\end{array}
 		\right.
 \end{equation}
