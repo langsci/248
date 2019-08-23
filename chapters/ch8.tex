@@ -281,7 +281,9 @@ and
 
 \noindent This implies either $jk > lm$ and $jl \geq km$ or $jk \geq lm$ and $jl > km$, both of which imply $j > m$, exactly as we had when we considered the distributed form. But notice how much easier it was to obtain the result.
 
-So far, I have considered just the four lexical variables $x_1$, $x_2$, $y_1$, $y_2$ derived from the words in the sentence as players but there are, in fact, potentially phrasal and sentential variables too. These are $x_{12} = x_1 \odot x_2$ and $y_{12} = y_1 \star y_2$. The four possible strategies of $x_{12}$ are $\sigma_1\sigma_2$, $\sigma_1\sigma'_2$, $\sigma'_1\sigma_2$, and $\sigma'_1\sigma'_2$ and the single strategy of $y_{12}$ is $t_1t_2$. But since these choices of the sentential variables are in fact determined by the choices of the four lexical players, these sentential players have no \emph{real} choice beyond the lexical choices. And, indeed, this is reflected in the fact that the payoffs the semantic sentential variables receive from the four strategy choices -- $P(\sigma_1,\sigma_2 \cond t_1, t_2; u) = j$, $P(\sigma_1,\sigma'_2 \cond t_1, t_2; u) = k$, $P(\sigma'_1,\sigma_2 \cond t_1, t_2; u) = l$, and $P(\sigma'_1,\sigma'_2 \cond t_1, t_2; u) = m$ -- are also ordered by the requirements we have displayed above for various equilibria. For example, as we just saw, if $(\sigma_1, \sigma_2)$ is a Pareto-Nash equilibrium of the compact form, then $P(\sigma_1,\sigma_2 \cond t_1, t_2; u) = j$ is automatically the maximum among \[\Bigl\{P(\sigma_1,\sigma_2 \cond t_1, t_2; u), P(\sigma_1,\sigma'_2 \cond t_1, t_2; u), P(\sigma'_1,\sigma_2 \cond t_1, t_2; u), P(\sigma'_1,\sigma'_2 \cond t_1, t_2; u)\Bigr\}\allowbreak =\allowbreak \{j, k, l, m\}\text{.}\] This leads to an insight that is parallel to Theorem~\ref{thm:one} above.
+So far, I have considered just the four lexical variables $x_1$, $x_2$, $y_1$, $y_2$ derived from the words in the sentence as players but there are, in fact, potentially phrasal and sentential variables too. These are $x_{12} = x_1 \odot x_2$ and $y_{12} = y_1 \star y_2$. The four possible strategies of $x_{12}$ are $\sigma_1\sigma_2$, $\sigma_1\sigma'_2$, $\sigma'_1\sigma_2$, and $\sigma'_1\sigma'_2$ and the single strategy of $y_{12}$ is $t_1t_2$. But since these choices of the sentential variables are in fact determined by the choices of the four lexical players, these sentential players have no \emph{real} choice beyond the lexical choices. And, indeed, this is reflected in the fact that the payoffs the semantic sentential variables receive from the four strategy choices -- $P(\sigma_1,\sigma_2 \cond t_1, t_2; u) = j$, $P(\sigma_1,\sigma'_2 \cond t_1, t_2; u) = k$, $P(\sigma'_1,\sigma_2 \cond t_1, t_2; u) = l$, and $P(\sigma'_1,\sigma'_2 \cond t_1, t_2; u) = m$ -- are also ordered by the requirements we have displayed above for various equilibria. For example, as we just saw, if $(\sigma_1, \sigma_2)$ is a Pareto-Nash equilibrium of the compact form, then $P(\sigma_1,\sigma_2 \cond t_1, t_2; u) = j$ is automatically the maximum among \begin{multline*}
+    \Bigl\{P(\sigma_1,\sigma_2 \cond t_1, t_2; u), P(\sigma_1,\sigma'_2 \cond t_1, t_2; u), P(\sigma'_1,\sigma_2 \cond t_1, t_2; u), P(\sigma'_1,\sigma'_2 \cond t_1, t_2; u)\Bigr\} \\ = \{j, k, l, m\}\text{.}\end{multline*}
+This leads to an insight that is parallel to Theorem~\ref{thm:one} above.
 
 \begin{theorem} \label{thm:three}
 The compact form of a locutionary global game contains all the information required to determine its equilibrium. There is no need to consider nonlexical players.
@@ -632,7 +634,7 @@ In \sectref{sec:content selection game}, I mentioned the possibility that $\cal 
 
 \begin{figure}[h]
 \begin{center}
-\begin{picture}(150,125)(50,18)
+\begin{picture}(150,125)(35,18)
 %-------------------------------
 %NODES
 \put(54,72){\circle*{3}}
