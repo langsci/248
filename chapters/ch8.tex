@@ -297,7 +297,7 @@ Every locutionary global game has at least one Nash equilibrium in pure strategi
 \noindent This result does not imply that mixed strategies may never appear as equilibria. When there is more than one Nash equilibrium in pure strategies, there may not be a unique Pareto-Nash equilibrium in pure strategies, in which case a unique mixed strategy equilibrium may be optimal.
 \is{game!compact form|)}
 
-\subsection{The main theorems}
+\subsection{The main theorems}\label{sec:maintheorem}
 
 In general, a sentence $\varphi$ can be expressed as $\varphi_1 \circ \varphi_2 \circ \ldots \circ \varphi_n = \varphi_1 \varphi_2 \ldots \varphi_n$ where each $\varphi_i$ is a word and there are $n$ words in the sentence. If $\varphi$ is uttered in some utterance situation $u$, then each word $\varphi_i$ has a range of possible referential meanings given by the Semantic Constraint. The variable $x_i$ stands for these possible meanings of $\varphi_i$ and all such $x_i$ together form the \emph{meaning vector} $x = (x_1, x_2, \ldots, x_n)$. Likewise, the possible parse trees $y_j$ of each word $\varphi_j$ can be collected in the \emph{parse vector} $y = (y_1, y_2, \ldots, y_n)$. Here, the range of each variable $y_j$ is given by the Syntactic Constraint.
 
@@ -306,7 +306,6 @@ The meaning and parse vectors $x$ and $y$ together form the \emph{content vector
 We are now ready to state the central result of this section based on all the calculations above. 
 
 \begin{theorem}
-
 Given an utterance and its locutionary global game (with symmetric payoffs), its lexical meanings and parses are given by the following equivalent characterizations:
 \begin{equation}
 z^\star = \argmax_{z} P(z_k \cond z_{-k}; u) = \argmax_{z} P(z; u), \quad k = 1, \dots, 2n \label{eq:simple}
@@ -359,7 +358,6 @@ I will not analyze this scaled form of the locutionary game but just state the c
  
 
 \begin{theorem}
-
 Given a locutionary global game, the lexical meanings and parses of an utterance are given by the following equivalent characterizations:
 \begin{equation}\label{eq:simple with payoffs}
 \begin{split}
