@@ -1,8 +1,1 @@
-{"versions": [{"versiontype": "proofreading",
-		"title": "Communication and content",
-		"authors": [{"name": "Prashant Parikh"}],
-	"license": "CC-BY-4.0",
-	"DOI": "10.5281/zenodo.3243924",
-	"publishedAt": "2019-06-12T11:18:18.000Z"}
-	]
-}
+{"versions": [{"DOI": "10.5281/zenodo.3243924", "license": "CC-BY-4.0", "title": "Communication and content", "versiontype": "proofreading", "publishedAt": "2019-06-12T11:18:18.000Z", "authors": [{"name": "Prashant Parikh"}]}, {"DOI": "10.5281/zenodo.3243924", "license": "CC-BY-4.0", "title": "Communication and content", "versiontype": "first_edition", "publishedAt": "2019-11-18T11:20:08.142913", "authors": [{"name": "Prashant Parikh"}]}]}
